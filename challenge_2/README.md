@@ -3,9 +3,9 @@
 Projekt do zadania 2.
 
 Za pomocą dostępnego widoku oraz najlepszych znanych Ci praktyk zrealizuj funkcjonalność spełniającą następujące kryteria:
-⁃ na widoku pokazuje się lista dat z czasem (początkowo pusta lista jeżeli nie dodano jeszcze żadnej daty),
-⁃ po naciśnięciu na przycisk do listy dat dodaje się aktualna data z czasem,
-⁃ daty powinny być zapisane w aplikacji w sposób trwały w formie timestampów.
+- na widoku pokazuje się lista dat z czasem (początkowo pusta lista jeżeli nie dodano jeszcze żadnej daty),
+- po naciśnięciu na przycisk do listy dat dodaje się aktualna data z czasem,
+- daty powinny być zapisane w aplikacji w sposób trwały w formie timestampów.
 
 ## Getting Started
 
