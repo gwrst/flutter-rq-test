@@ -2,6 +2,8 @@
 
 Projekt do zadania 1.
 
+Utwórz 3 kolumny pokolorowane na rożne kolory, rozciągnięte na cały ekran. Środkowa kolumna ma być 2 razy większa niż pozostałe.
+
 ## Getting Started
 
 This project is a starting point for a Flutter application.
