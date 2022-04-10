@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
+import 'package:recruitment_task/data/database.dart';
 
 import 'home/home_view.dart';
 
@@ -11,13 +13,20 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-        primarySwatch: Colors.red,
-      ),
-      home: const HomeView(
-        title: 'Recruitment task',
+    return Provider<MyDatabase>(
+      create: (_) => MyDatabase(),
+      dispose: (_, db) => db.close(),
+      child: MaterialApp(
+        debugShowCheckedModeBanner: false,
+        theme: ThemeData(
+          primarySwatch: Colors.red,
+        ),
+        home: Builder(builder: (context) {
+          return HomeView(
+            title: 'Recruitment task',
+            db: context.read<MyDatabase>(),
+          );
+        }),
       ),
     );
   }
