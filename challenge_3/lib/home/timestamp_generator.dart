@@ -18,7 +18,7 @@ class TimestampGeneratorService {
   Stream<TimestampGeneratorState> getTimestamp() async* {
     int p = 0;
     var id = ++getCount;
-    print('Id = ${getCount}');
+    print('Id = $getCount');
     while (p < 1000) {
       await Future.delayed(Duration(milliseconds: interval));
       p = p + interval;
