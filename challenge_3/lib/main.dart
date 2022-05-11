@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.red,
       ),
-      home: HomeView(
+      home: const HomeView(
         title: 'Recruitment task',
       ),
     );
